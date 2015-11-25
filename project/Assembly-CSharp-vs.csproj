@@ -52,6 +52,7 @@
      <Compile Include="Assets\Entities\Spline_fun\Bezier.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Curve.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Line.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Spline.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />
  <Reference Include="UnityEngine.UI">

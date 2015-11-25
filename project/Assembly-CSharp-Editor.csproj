@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\CurveInspector.cs" />
      <Compile Include="Assets\Editor\LineInspector.cs" />
+     <Compile Include="Assets\Editor\SplineInspector.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Adam/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>
