@@ -50,9 +50,13 @@
      <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
      <Compile Include="Assets\Entities\PlayerShip\PlayerController.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Bezier.cs" />
-     <Compile Include="Assets\Entities\Spline_fun\Curve.cs" />
-     <Compile Include="Assets\Entities\Spline_fun\Line.cs" />
-     <Compile Include="Assets\Entities\Spline_fun\Spline.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\BezierControlPointMode.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Path_Types\Curve.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Path_Types\Line.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Path_Types\Spline.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\SplineWalkerMode.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Spline_Functions\SplineDecorator.cs" />
+     <Compile Include="Assets\Entities\Spline_fun\Spline_Functions\SplineWalker.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />
  <Reference Include="UnityEngine.UI">

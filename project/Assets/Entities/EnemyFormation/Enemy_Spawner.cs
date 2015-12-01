@@ -5,8 +5,8 @@ public class Enemy_Spawner : MonoBehaviour {
 
 	public GameObject enemyPrefab;
 
-	float width = 15f;
-	float height = 10f;
+	float width = 1f;
+	float height = 1f;
 
 	// Use this for initialization
 	void Start () {
