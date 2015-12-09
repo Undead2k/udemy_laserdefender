@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
-	private Vector3 playerPos;
+	public Vector3 playerPos;
 
 	public float speed = 0.2f;
 
@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour {
 	float clamp_miny;
 	float clamp_maxy;
 	float padding = 0.5f;
+
+
 
 
 	// Use this for initialization
@@ -79,6 +81,5 @@ public class PlayerController : MonoBehaviour {
 
 	}
 	
-
 
 }
