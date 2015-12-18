@@ -50,6 +50,7 @@
      <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
      <Compile Include="Assets\Entities\PlayerShip\PlayerController.cs" />
      <Compile Include="Assets\Entities\PlayerShip\Shoot.cs" />
+     <Compile Include="Assets\Entities\Projectiles\destoryProjectile.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Bezier.cs" />
      <Compile Include="Assets\Entities\Spline_fun\BezierControlPointMode.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Path_Types\Curve.cs" />

@@ -5,6 +5,7 @@ public class Shoot : MonoBehaviour {
 
 	public Rigidbody bullet;
 	public float speed = 1f;
+	public float fireRate = 0.1f;
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +19,11 @@ public class Shoot : MonoBehaviour {
 
 	void FireLaser_Control(){
 		
-		if (Input.GetButton ("Fire1")) {
-
-			FireLaser_method();
-			
+		if (Input.GetButtonDown ("Fire1")) {
+			InvokeRepeating("FireLaser_method", 0.000001f, fireRate);
+		}
+		if (Input.GetButtonUp ("Fire1")) {
+			CancelInvoke("FireLaser_method");
 		}
 		
 	}
