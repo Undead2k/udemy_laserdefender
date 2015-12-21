@@ -46,10 +46,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Entities\Enemy\destroyShip.cs" />
+     <Compile Include="Assets\Entities\Enemy\e_ship_stats.cs" />
      <Compile Include="Assets\Entities\EnemyFormation\Enemy_Spawner.cs" />
      <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
      <Compile Include="Assets\Entities\PlayerShip\PlayerController.cs" />
      <Compile Include="Assets\Entities\PlayerShip\Shoot.cs" />
+     <Compile Include="Assets\Entities\Projectiles\Projectile.cs" />
      <Compile Include="Assets\Entities\Projectiles\destoryProjectile.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Bezier.cs" />
      <Compile Include="Assets\Entities\Spline_fun\BezierControlPointMode.cs" />

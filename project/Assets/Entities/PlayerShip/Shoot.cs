@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Shoot : MonoBehaviour {
 
-	public Rigidbody bullet;
+	public Rigidbody2D bullet;
 	public float speed = 1f;
 	public float fireRate = 0.1f;
 
@@ -29,8 +29,8 @@ public class Shoot : MonoBehaviour {
 	}
 	
 	void FireLaser_method(){
-		Rigidbody laser = Instantiate (bullet, transform.position, transform.rotation) as Rigidbody;
-		laser.AddForce (transform.up * speed, ForceMode.VelocityChange);
+		Rigidbody2D laser = Instantiate (bullet, transform.position, transform.rotation) as Rigidbody2D;
+		laser.velocity = new Vector3 (0, speed, 0);
 	}
 
 }
