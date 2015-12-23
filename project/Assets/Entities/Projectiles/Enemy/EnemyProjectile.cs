@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : MonoBehaviour {
-
+public class EnemyProjectile : MonoBehaviour {
+	
 	//standard laser
-	public float laser_1_damage = 1f;
-
-
+	public float Laser = 1f;
+	
+	
 	public float GetDamage(){
-		return laser_1_damage;
+		return Laser;
 	}
-
+	
 	public void Hit(){
 		Destroy (gameObject);
 	}
-
+	
 }

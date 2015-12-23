@@ -52,7 +52,12 @@
      <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
      <Compile Include="Assets\Entities\PlayerShip\PlayerController.cs" />
      <Compile Include="Assets\Entities\PlayerShip\Shoot.cs" />
-     <Compile Include="Assets\Entities\Projectiles\Projectile.cs" />
+     <Compile Include="Assets\Entities\PlayerShip\destoryPlayerShip1.cs" />
+     <Compile Include="Assets\Entities\PlayerShip\playerShip_stats.cs" />
+     <Compile Include="Assets\Entities\Projectiles\Enemy\EnemyProjectile.cs" />
+     <Compile Include="Assets\Entities\Projectiles\Enemy\EnemyShooter.cs" />
+     <Compile Include="Assets\Entities\Projectiles\Player\PlayerProjectile.cs" />
+     <Compile Include="Assets\Entities\Projectiles\Player\moveForward.cs" />
      <Compile Include="Assets\Entities\Projectiles\destoryProjectile.cs" />
      <Compile Include="Assets\Entities\Spline_fun\Bezier.cs" />
      <Compile Include="Assets\Entities\Spline_fun\BezierControlPointMode.cs" />
