@@ -11,6 +11,8 @@ public class destoryProjectile : MonoBehaviour {
 
 			Destroy (coll.gameObject);
 
+			//Debug.Log("destoried bullet");
+
 	}
 		if (bullet2){
 			

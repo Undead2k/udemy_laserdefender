@@ -11,15 +11,8 @@ public class Enemy_Spawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		SpawnEnemy ();
 
-		foreach (Transform child in transform) {
-		
-			GameObject enemy = Instantiate (enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
-			enemy.transform.parent = child;
-		
-
-
-		}
 	}
 
 	public void OnDrawGizmos(){
@@ -31,5 +24,36 @@ public class Enemy_Spawner : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+//		if (AllMembersDead ()) {
+//			Debug.Log("all dead");
+//			SpawnEnemy();
+//		}
+
+	}
+
+
+	// Not good behaviour when used with the splines. Not what we want.
+//	bool AllMembersDead(){
+//
+//		foreach (Transform childPositionGameObject in transform) {
+//			//Debug.Log (childPositionGameObject.childCount);
+//			if (childPositionGameObject.childCount > 0){
+//				return false;
+//			}
+//		}
+//		return true;
+//
+//	}
+
+	void SpawnEnemy(){
+
+		foreach (Transform child in transform) {
+			
+			GameObject enemy = Instantiate (enemyPrefab, child.transform.position, Quaternion.identity) as GameObject;
+			enemy.transform.parent = child;
+			
+			
+			
+		}
 	}
 }

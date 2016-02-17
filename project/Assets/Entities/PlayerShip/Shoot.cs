@@ -4,6 +4,7 @@ using System.Collections;
 public class Shoot : MonoBehaviour {
 
 	public Rigidbody2D bullet;
+	public float fireRate = 0.05f;
 
 	// Use this for initialization
 	void Start () {
