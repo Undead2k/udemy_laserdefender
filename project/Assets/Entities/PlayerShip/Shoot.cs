@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class Shoot : MonoBehaviour {
 
 	public Rigidbody2D bullet;
 	public float fireRate = 0.05f;
 
-	// Use this for initialization
-	void Start () {
-	
+	private SoundFX sfx;
+
+	void Start(){
+		sfx = GameObject.Find ("SoundFX").GetComponent<SoundFX> ();
 	}
-	
 	// Update is called once per frame
 	void Update () {
 		FireLaser_Control ();
+
+	
 	}
 
 	void FireLaser_Control(){
@@ -29,8 +32,7 @@ public class Shoot : MonoBehaviour {
 	
 	void FireLaser_method(){
 		Instantiate (bullet, transform.position, transform.rotation);
-
-
+		sfx.sfx_PlayerShoot1 ();
 	}
 
 }

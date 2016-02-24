@@ -9,5 +9,7 @@ public class e_ship_stats : MonoBehaviour {
 	public float fireRate = 0.01f;
 	public float projectileSpeed = 5f;
 
+	public int points = 0;
+
 
 }

@@ -50,6 +50,8 @@
      <Compile Include="Assets\Entities\Enemy\e_ship_stats.cs" />
      <Compile Include="Assets\Entities\EnemyFormation\Enemy_Spawner.cs" />
      <Compile Include="Assets\Entities\EnemyFormation\Position.cs" />
+     <Compile Include="Assets\Entities\EnemyFormation\ifGroupDead.cs" />
+     <Compile Include="Assets\Entities\EnemyFormation\moveGroupDown.cs" />
      <Compile Include="Assets\Entities\PlayerShip\PlayerController.cs" />
      <Compile Include="Assets\Entities\PlayerShip\Shoot.cs" />
      <Compile Include="Assets\Entities\PlayerShip\destoryPlayerShip1.cs" />
@@ -69,6 +71,9 @@
      <Compile Include="Assets\Entities\Spline_fun\Spline_Functions\SplineWalker.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\MusicPlayer.cs" />
+     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
+     <Compile Include="Assets\Scripts\SoundFX.cs" />
+     <Compile Include="Assets\Scripts\WinLoseConditions.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Adam/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.9/Standalone/UnityEngine.UI.dll</HintPath>
  </Reference>

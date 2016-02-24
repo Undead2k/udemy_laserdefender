@@ -13,4 +13,9 @@ public class LevelManager : MonoBehaviour {
 		Application.Quit ();
 	}
 
+	public void ResetLevel(){
+		Debug.Log ("Restart requested");
+
+	}
+
 }

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
 
 	public float speed = 0.2f;
 
+
 	float clamp_minx;
 	float clamp_maxx;
 	float clamp_miny;
