@@ -7,17 +7,16 @@ public class WinLoseConditions : MonoBehaviour {
 	private GameObject textWin;
 	private GameObject textLose;
 
-	private LevelManager levelManager;
-	private playerShip_stats player;
+
+	private ScoreKeeper sk;
 
 
 	
 	// Use this for initialization
 	void Start () {
 
-		levelManager = GameObject.Find ("LevelManager").GetComponent<LevelManager> ();
-		player = GameObject.Find ("Player_Ship_1").GetComponent<playerShip_stats> ();
 
+		sk = GameObject.Find ("ScoreKeeper").GetComponent<ScoreKeeper> ();
 
 
 		textWin = GameObject.Find ("Win");
@@ -28,23 +27,18 @@ public class WinLoseConditions : MonoBehaviour {
 	}
 
 	void Update(){
-		if (player.isPlayerAlive == false) {
-			if (Input.GetKey ("space")) {
-				levelManager.LoadLevel("Game");
-			}
-		}
+
 	}
 
 	public void Win (){
 		textWin.SetActive(true);
 
-		if (Input.GetKey ("up")) {
-			levelManager.ResetLevel();
-		}
 	}
 
 	public void Lose (){
-			textLose.SetActive (true);
+		textLose.SetActive (true);
+		sk.Highscore ();
+
 
 	
 	}

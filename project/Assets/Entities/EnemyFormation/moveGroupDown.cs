@@ -19,7 +19,7 @@ public class moveGroupDown : MonoBehaviour {
 
 		this.transform.position = group;
 
-		if (this.transform.position.y <= -15f) {
+		if (this.transform.position.y <= -12f) {
 			Destroy(gameObject);
 		}
 	}

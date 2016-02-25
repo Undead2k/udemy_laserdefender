@@ -4,9 +4,11 @@ using System.Collections;
 public class destroyShip : MonoBehaviour {
 
 	private ScoreKeeper scoreKeeper;
+	private SoundFX sfx;
 
 	void Start(){
 		scoreKeeper = GameObject.Find ("ScoreKeeper").GetComponent<ScoreKeeper> ();
+		sfx = GameObject.Find ("SoundFX").GetComponent<SoundFX> ();
 	}
 
 	void OnTriggerEnter2D(Collider2D coll){
@@ -22,6 +24,7 @@ public class destroyShip : MonoBehaviour {
 			if (shipStats.health <= 0f) {
 				scoreKeeper.Score(shipStats.points);
 				Destroy (gameObject);
+				sfx.sfx_EnemyDeath1();
 			}
 		}
 	}
